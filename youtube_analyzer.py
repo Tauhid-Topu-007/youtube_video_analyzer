@@ -21,7 +21,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Enhanced Professional Custom CSS with Modern Design
+# Enhanced Professional Custom CSS with Teal & Coral Theme
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
@@ -30,9 +30,9 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
 
-    /* Main background with animated gradient */
+    /* Main background - Teal gradient */
     .stApp {
-        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        background: linear-gradient(135deg, #0f2b2d 0%, #1a4a4f 50%, #0d3b3f 100%);
         background-size: 400% 400%;
         animation: gradientShift 15s ease infinite;
     }
@@ -57,18 +57,18 @@ st.markdown("""
         z-index: 0;
     }
 
-    /* Sidebar styling with glass morphism */
+    /* Sidebar styling - Dark teal */
     [data-testid="stSidebar"] {
-        background: rgba(15, 12, 41, 0.95);
+        background: rgba(15, 43, 45, 0.95);
         backdrop-filter: blur(20px);
         border-right: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 10px 0 30px rgba(0, 0, 0, 0.3);
     }
 
-    /* Glowing title animation */
+    /* Glowing title animation - Coral accent */
     @keyframes glow {
         0%, 100% { text-shadow: 0 0 20px rgba(255,255,255,0.1); }
-        50% { text-shadow: 0 0 40px rgba(74,144,226,0.5), 0 0 60px rgba(74,144,226,0.3); }
+        50% { text-shadow: 0 0 40px rgba(255, 107, 107, 0.5), 0 0 60px rgba(255, 107, 107, 0.3); }
     }
 
     .main-title {
@@ -76,7 +76,7 @@ st.markdown("""
         font-size: 4rem;
         font-weight: 800;
         margin-bottom: 10px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        background: linear-gradient(135deg, #5dade2 0%, #48c9b0 50%, #ff6b6b 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -84,10 +84,10 @@ st.markdown("""
         animation: glow 3s ease-in-out infinite;
     }
 
-    /* Subtitle with elegant style */
+    /* Subtitle styling */
     .subtitle {
         text-align: center;
-        background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+        background: linear-gradient(135deg, #a8e6cf, #ff8b8b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -97,15 +97,15 @@ st.markdown("""
         letter-spacing: 0.5px;
     }
 
-    /* Enhanced Feature cards with 3D effect */
+    /* Enhanced Feature cards with 3D effect - Teal theme */
     .feature-card {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.15), rgba(255, 107, 107, 0.1));
         backdrop-filter: blur(15px);
         border-radius: 20px;
         padding: 25px 15px;
         text-align: center;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(72, 201, 176, 0.3);
         cursor: pointer;
         position: relative;
         overflow: hidden;
@@ -118,7 +118,7 @@ st.markdown("""
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255,107,107,0.2), transparent);
         transition: left 0.5s;
     }
 
@@ -128,9 +128,9 @@ st.markdown("""
 
     .feature-card:hover {
         transform: translateY(-10px) scale(1.02);
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-        border: 1px solid rgba(102, 126, 234, 0.6);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(102, 126, 234, 0.3);
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.25), rgba(255, 107, 107, 0.2));
+        border: 1px solid rgba(255, 107, 107, 0.6);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 107, 107, 0.3);
     }
 
     .feature-icon {
@@ -146,7 +146,7 @@ st.markdown("""
     }
 
     .feature-card h3 {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #48c9b0, #ff6b6b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -156,7 +156,7 @@ st.markdown("""
     }
 
     .feature-card p {
-        color: #d0d0d0;
+        color: #c8e6e0;
         font-size: 0.9rem;
         margin: 0;
         line-height: 1.6;
@@ -164,9 +164,9 @@ st.markdown("""
 
     /* Modern input styling */
     .stTextInput > div > div > input {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(72, 201, 176, 0.1);
         backdrop-filter: blur(10px);
-        border: 2px solid rgba(102, 126, 234, 0.3);
+        border: 2px solid rgba(72, 201, 176, 0.3);
         border-radius: 15px;
         padding: 16px 20px;
         font-size: 1rem;
@@ -175,24 +175,24 @@ st.markdown("""
     }
 
     .stTextInput > div > div > input:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
-        background: rgba(255, 255, 255, 0.15);
+        border-color: #ff6b6b;
+        box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.2);
+        background: rgba(72, 201, 176, 0.15);
         transform: scale(1.01);
     }
 
     .stTextInput > div > div > input::placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(200, 230, 224, 0.6);
     }
 
-    /* Animated button */
+    /* Animated button - Coral theme */
     @keyframes pulse {
         0%, 100% { transform: scale(1); }
         50% { transform: scale(1.05); }
     }
 
     .stButton > button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
         color: white;
         border: none;
         border-radius: 15px;
@@ -228,18 +228,18 @@ st.markdown("""
 
     .stButton > button:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
         animation: pulse 1s infinite;
     }
 
-    /* Analysis card with glass morphism */
+    /* Analysis card with glass morphism - Teal theme */
     .analysis-card {
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(72, 201, 176, 0.08);
         backdrop-filter: blur(20px);
         border-radius: 25px;
         padding: 40px;
         margin-top: 30px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(72, 201, 176, 0.3);
         box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
         animation: fadeInUp 0.6s ease-out;
     }
@@ -255,14 +255,14 @@ st.markdown("""
         }
     }
 
-    /* Stats card styling */
+    /* Stats card styling - Teal & Coral */
     .stats-card {
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.2), rgba(255, 107, 107, 0.15));
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 25px;
         text-align: center;
-        border: 1px solid rgba(102, 126, 234, 0.3);
+        border: 1px solid rgba(72, 201, 176, 0.3);
         transition: all 0.3s ease;
         animation: fadeIn 0.8s ease-out;
     }
@@ -274,21 +274,21 @@ st.markdown("""
 
     .stats-card:hover {
         transform: translateY(-5px) scale(1.03);
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
-        box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.3), rgba(255, 107, 107, 0.25));
+        box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
     }
 
     .stats-number {
         font-size: 2.5rem;
         font-weight: 800;
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #48c9b0, #ff6b6b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     .stats-label {
-        color: #c0c0c0;
+        color: #c8e6e0;
         font-size: 0.9rem;
         margin-top: 8px;
         font-weight: 500;
@@ -307,13 +307,13 @@ st.markdown("""
     }
 
     .success-message {
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
-        border: 2px solid rgba(102, 126, 234, 0.6);
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.2), rgba(255, 107, 107, 0.2));
+        border: 2px solid rgba(72, 201, 176, 0.6);
         border-radius: 15px;
         padding: 18px;
         margin: 20px 0;
         text-align: center;
-        color: #667eea;
+        color: #48c9b0;
         font-weight: 700;
         font-size: 1.1rem;
         animation: slideIn 0.5s ease-out;
@@ -322,20 +322,21 @@ st.markdown("""
 
     /* Info box with glow effect */
     .info-box {
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-        border-left: 4px solid #667eea;
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.1), rgba(255, 107, 107, 0.08));
+        border-left: 4px solid #ff6b6b;
         border-radius: 12px;
         padding: 18px 22px;
         margin: 15px 0;
-        color: #e0e0e0;
+        color: #d4f1ec;
         backdrop-filter: blur(5px);
         transition: all 0.3s ease;
     }
 
     .info-box:hover {
         transform: translateX(5px);
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+        background: linear-gradient(135deg, rgba(72, 201, 176, 0.15), rgba(255, 107, 107, 0.12));
         border-left-width: 6px;
+        border-left-color: #48c9b0;
     }
 
     /* Tab styling */
@@ -348,47 +349,47 @@ st.markdown("""
     }
 
     .stTabs [data-baseweb="tab"] {
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(72, 201, 176, 0.1);
         border-radius: 12px;
         padding: 12px 28px;
         transition: all 0.3s ease;
-        color: #c0c0c0;
+        color: #c8e6e0;
         font-weight: 600;
         font-size: 1rem;
         backdrop-filter: blur(5px);
     }
 
     .stTabs [data-baseweb="tab"]:hover {
-        background: rgba(102, 126, 234, 0.3);
+        background: rgba(255, 107, 107, 0.3);
         color: white;
         transform: translateY(-2px);
     }
 
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #48c9b0, #ff6b6b);
         color: white;
-        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
     }
 
     /* Progress bar styling */
     .stProgress > div > div {
-        background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        background: linear-gradient(90deg, #48c9b0, #ff6b6b, #ff8e8e);
         border-radius: 10px;
     }
 
     /* Metric cards */
     [data-testid="metric-container"] {
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(72, 201, 176, 0.08);
         backdrop-filter: blur(10px);
         border-radius: 15px;
         padding: 20px;
-        border: 1px solid rgba(102, 126, 234, 0.2);
+        border: 1px solid rgba(72, 201, 176, 0.3);
         transition: all 0.3s ease;
     }
 
     [data-testid="metric-container"]:hover {
         transform: translateY(-3px);
-        border-color: rgba(102, 126, 234, 0.6);
+        border-color: rgba(255, 107, 107, 0.6);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
@@ -397,7 +398,7 @@ st.markdown("""
         text-align: center;
         padding: 40px;
         margin-top: 60px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(72, 201, 176, 0.2);
         background: rgba(0, 0, 0, 0.3);
         border-radius: 25px;
         backdrop-filter: blur(10px);
@@ -411,7 +412,7 @@ st.markdown("""
     }
 
     .footer-text strong {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #48c9b0, #ff6b6b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -425,17 +426,17 @@ st.markdown("""
     }
 
     ::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(72, 201, 176, 0.1);
         border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #48c9b0, #ff6b6b);
         border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(135deg, #764ba2, #f093fb);
+        background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
     }
 
     /* Responsive design */
@@ -615,8 +616,8 @@ def main():
         st.markdown("""
         <div style="text-align: center; padding: 20px 0;">
             <div style="font-size: 3rem;">🎬</div>
-            <h2 style="color: #667eea; margin: 10px 0;">Analyzer Pro</h2>
-            <div style="height: 2px; background: linear-gradient(90deg, #667eea, #764ba2); margin: 10px 0;"></div>
+            <h2 style="color: #48c9b0; margin: 10px 0;">Analyzer Pro</h2>
+            <div style="height: 2px; background: linear-gradient(90deg, #48c9b0, #ff6b6b); margin: 10px 0;"></div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -628,10 +629,10 @@ def main():
             default_index=0,
             styles={
                 "container": {"padding": "0!important", "background-color": "transparent"},
-                "icon": {"color": "#667eea", "font-size": "20px"},
+                "icon": {"color": "#48c9b0", "font-size": "20px"},
                 "nav-link": {"font-size": "16px", "text-align": "left", "margin": "8px 0", "color": "#ffffff",
                              "border-radius": "10px"},
-                "nav-link-selected": {"background": "linear-gradient(135deg, #667eea, #764ba2)"},
+                "nav-link-selected": {"background": "linear-gradient(135deg, #48c9b0, #ff6b6b)"},
             }
         )
 
