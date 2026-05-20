@@ -1,0 +1,26 @@
+# Core dependencies
+agno
+groq
+openai
+python-dotenv
+
+# YouTube tools dependency
+youtube-transcript-api
+# Streamlit for web interface
+streamlit
+
+# Optional but recommended for better performance
+rich
+pydantic
+
+# For YouTube data fetching (if YouTubeTools requires it)
+google-api-python-client
+google-auth-oauthlib
+
+# For text processing
+beautifulsoup4
+requests
+
+# For caching and better performance
+cachetools
+streamlit-option-menu
