@@ -7,7 +7,7 @@
 
 **Professional AI-Powered YouTube Content Analysis Platform** - Extract deep insights, intelligent timestamps, and comprehensive analytics from any YouTube video in seconds.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cbonbmdvcg5bledydnazez.streamlit.app/)
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## 🚀 Live Demo
 
-[▶️ **Try the Live Demo**](https://your-app-url.streamlit.app)
+[▶️ **Try the Live Demo**](https://cbonbmdvcg5bledydnazez.streamlit.app/)
 
 *Demo credentials not required*
 
